@@ -9,7 +9,7 @@ document.getElementById("inspire-button").addEventListener('click', function() {
     document.getElementById("expanded-element").classList.toggle('visible');
     setTimeout(() => {
         document.getElementById("expanded-element").classList.toggle('visible');
-    }, 7000);
+    }, 100000);
 });
 
 // Function to display a random message

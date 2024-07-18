@@ -31,7 +31,7 @@ main {
     padding: 0;
     height: 100vh;
     justify-content: center;
-    filter: brightness(90%);
+    /* filter: brightness(90%); */
     
 }
 
@@ -45,7 +45,8 @@ div {
 div p {
     font-size: 2rem;
     font-weight: 500;
-    margin: 0.5rem 0;
+    margin: 0;
+    padding: 1rem;
 }
 
 button {
@@ -54,18 +55,23 @@ button {
     border-radius: 25px;
     padding: 5px;
     cursor: pointer;
+    
+}
+
+button:hover {
+    transform: scale(1.2);
     filter: brightness(120%);
 }
 
 #inspire-button {
     padding: 10px 20px;
     font-size: 18px;
-    background-color: #3498db;
+    background-color: #3fa6eb;
     color: white;
     border: none;
     outline:none;
     cursor: pointer;
-    transition: transform 0.4s ease-out, opacity 0.2s ease-out;
+    /* transition: transform 0.4s ease-out, opacity 0.2s ease-out; */
     letter-spacing: 1px;
     text-transform: capitalize;
 
@@ -92,7 +98,7 @@ button {
     top: 50%;
     left: 50%;
     border: 1px solid black;
-    border-radius: 100px;
+    border-radius: 50px;
     z-index: 1000;
     
 }
@@ -103,22 +109,127 @@ button {
     transform: translate(-50%, -50%);
     opacity: 1;
     justify-content: space-evenly;
+    width: 650px;
 
 }
 
 #random-quote {
     margin: 0 auto;
-    padding: 1rem;
+    padding: 0 1rem;
+}
+
+#random-author {
+    margin: 0 auto;
+    padding: 0;
+
 }
 
 .hidden {
     display: none;
 }
 
-footer {
-    /* background-color: #8b2708; */
+/* footer {
+    background-color: #8b2708;
     background-color: black;
     color: #fff;
     text-align: center;
     padding: 10px 0;
+} */
+
+@media only screen and (min-width: 320px) and (max-width: 475px) {
+    main {
+        height: 100vh;
+    }
+
+    header { 
+        padding: 0 0.5rem;
+    }
+    
+    h1 {
+        font-size: 2.5rem;
+        padding: 0 0.6rem
+    }
+
+    div p {
+        font-size: 1.5rem;
+    }
+
+    #random-quote {
+        padding: 0;
+    }
+
+    #expanded-element {
+        width: 90%;
+        height: 50vh;
+    }
+
+    #expanded-element.visible {
+        width: 90%;
+        padding: 1rem;
+        height: 50vh;
+    }
+}
+
+@media only screen and (min-width: 476px) and (max-width: 768px) {
+    main {
+        height: 100vh;
+    }
+
+    header { 
+        padding: 0 0.5rem;
+    }
+    
+    h1 {
+        font-size: 2.5rem;
+        padding: 0 0.6rem;
+    }
+
+    div p {
+        font-size: 1.5rem;
+    }
+
+    #random-quote {
+        padding: 0;
+    }
+
+    #expanded-element {
+        width: 90%;
+        height: 50vh;
+    }
+
+    #expanded-element.visible {
+        width: 90%;
+        padding: 1rem;
+        height: 50vh;
+    }
+}
+
+@media only screen and (max-width: 768px) and (orientation: landscape) {
+    main {
+        height: 100vh;
+    }
+
+    header { 
+        padding: 0 0.5rem;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+        padding: 0 0.6rem;
+    }
+
+    div p {
+        font-size: 1.5rem;
+    }
+
+    #random-quote {
+        padding: 0;
+    }
+
+    #expanded-element.visible {
+        width: 90%;
+        padding: 1rem;
+        height: 60vh;
+    }
+
 }
