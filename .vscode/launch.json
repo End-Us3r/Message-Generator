@@ -8,7 +8,7 @@
             "type": "chrome",
             "request": "launch",
             "name": "open homepage.html",
-            "file": "${workspaceFolder}/homepage.html"
+            "file": "${workspaceFolder}/index.html"
         }
     ]
 }
