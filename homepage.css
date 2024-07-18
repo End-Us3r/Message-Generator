@@ -8,20 +8,116 @@ body {
     font-family: 'Poppins', sans-serif;
     background-color: #f5f5f5;
     height: auto;
-    margin: 1rem auto;
-    padding: 0;
+}
 
+header {
+    margin: 0;
+    text-align: center;
+}
+
+h1 {
+    font-size: 3.5rem;
+    font-weight: 600;
+    margin: 0.5rem 0;
 }
 
 main {
+    display: flex;
+    flex-direction: column;
+    background: url(layered-peaks-haikei.svg) no-repeat center center/cover;
+    color: white;
+    align-items: center;
+    margin: 0 auto;
+    padding: 0;
+    height: 100vh;
+    justify-content: center;
+    filter: brightness(90%);
+    
+}
+
+div {
+    margin: 0;
+    padding: 0;
     text-align: center;
-    margin: 1rem 0;
+
+}
+
+div p {
     font-size: 2rem;
-    color: #333;
+    font-weight: 500;
+    margin: 0.5rem 0;
+}
+
+button {
+    font-size: 1.5rem;
+    margin-top: 1rem;
+    border-radius: 25px;
+    padding: 5px;
+    cursor: pointer;
+    filter: brightness(120%);
+}
+
+#inspire-button {
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    outline:none;
+    cursor: pointer;
+    transition: transform 0.4s ease-out, opacity 0.2s ease-out;
+    letter-spacing: 1px;
+    text-transform: capitalize;
+
+}
+
+#inspire-button.clicked {
+    transform: scale(2);
+    opacity: 0;
+}
+
+#expanded-element {
+    display: none;
+    background-color: darkorange;
+    font-size: 1.5rem;
+    font-style: italic;
+    color: black;
+    text-align: center;
+    transition: transform 0.4s ease-out;
+    transition: opacity 0.4s ease-out;
+    padding: 3rem;
+    position: fixed;
+    width: 80%;
+    height: 50vh;
+    top: 50%;
+    left: 50%;
+    border: 1px solid black;
+    border-radius: 100px;
+    z-index: 1000;
+    
+}
+
+#expanded-element.visible {
+    display: flex;
+    flex-direction: column;
+    transform: translate(-50%, -50%);
+    opacity: 1;
+    justify-content: space-evenly;
+
+}
+
+#random-quote {
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+.hidden {
+    display: none;
 }
 
 footer {
-    background-color: #333;
+    /* background-color: #8b2708; */
+    background-color: black;
     color: #fff;
     text-align: center;
     padding: 10px 0;

@@ -2,18 +2,27 @@
 <html>
 <head>
     <title>Message Generator</title>
+    <link rel="stylesheet" type="text/css" href="homepage.css">
 </head>
 <body>
     <main>
-        <h1>Looking for some inspiration?</h1>
-        <p>You've come to the right place!</p>
-        <h2>Hit the button for some inspiration!</h2>
-        <button id="inspire-button">
-            Inspire me!
-        </button>
+        <header>
+            <h1>Need Inspiration?</h1>
+        </header>
+        <div>
+            <p> Push the G****** button!</p>
+            <button id="inspire-button">
+                Inspire me!
+            </button>
+            <div id="expanded-element" class="hidden">
+                <q id="random-quote"></q>
+                <p id="random-author"></p>
+            </div>
+        </div>
     </main>
 </body>
 <footer>
     <p>Created by James Atkins</p>
 </footer>
+<script src="homepage.js"></script>
 </html>
