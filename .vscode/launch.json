@@ -8,6 +8,7 @@
             "type": "chrome",
             "request": "launch",
             "name": "open homepage.html",
+            "url": "http://localhost:8080",
             "file": "${workspaceFolder}/index.html"
         }
     ]
